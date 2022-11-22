@@ -1,0 +1,8 @@
+from math import*
+p=int(input("enter the loan amount:"))
+R=int(input("enter the interest:"))
+t=int(input("enter the time period:"))
+R=R/(12*100)   #calculating rate for one month...
+print("EMI for given data:",end="")
+EMI=(p*R*pow(1+R,t))/(pow(1+R,t)-1)
+print(round(EMI))
