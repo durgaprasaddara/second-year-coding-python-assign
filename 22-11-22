@@ -1,0 +1,9 @@
+a=int(input("enter the a value:"))
+b=int(input("enter the b value:"))
+print("a=",a,"before swap")
+print("b=",b,"before swap")
+a=a^b
+b=a^b
+a=a^b
+print("a=",a,"after swap")
+print("b=",b,"after swap")
