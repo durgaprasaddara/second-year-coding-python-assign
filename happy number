@@ -1,0 +1,14 @@
+n=int(input("enter the number:"))
+x=n
+while(n>=10):
+    sum=0
+    while(n!=0):
+        r=n%10
+        sum=sum+(r**2)
+        r=n//10
+    x=sum
+if(x==1):
+    print(n,"is a happy number")
+else:
+    print(n, "is not a happy number")
+    
