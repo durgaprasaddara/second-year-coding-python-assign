@@ -1,0 +1,18 @@
+n=int(input("enter the n value"))
+lis=[]
+for i in range(n):
+    x=int(input())
+    lis.append(x)
+print("the list contains",lis)
+leng=len(lis)
+prime=[]
+for i in range(leng):
+    count=0
+    for j in range(2,lis[i]+1):
+        if(lis[i]%j==0):
+            count+=1
+    if(count==1):
+        prime.append(lis[i])
+print("prime of the given list is",prime)
+print("the smallest prime in the given list is",min(prime))
+print("the largest prime in the given list is",max(prime))
